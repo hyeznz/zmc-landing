@@ -1,7 +1,7 @@
 export const CONTACT = {
   tel: "1688-5461",
   telHref: "tel:1688-5461",
-  email: "zmcarryy@gmail.com",
+  email: "pallas@zmcary.com",
 };
 
 export const COMPANY = {
