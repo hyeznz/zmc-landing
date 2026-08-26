@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { CaretDown } from "@phosphor-icons/react/dist/ssr";
 import { Reveal } from "./Reveal";
 
@@ -40,7 +41,7 @@ export function Hero() {
       <Reveal delay={0.15} className="relative">
         <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
           <Image
-            src="/images/hero.webp"
+            src={asset("/images/hero.webp")}
             alt="제복을 입은 이사짐캐리 팀원들이 가구를 조심스럽게 포장하는 모습"
             fill
             priority

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { Package, Warehouse, Buildings, Check } from "@phosphor-icons/react/dist/ssr";
 import { SERVICES, EXTRA_PLANS } from "@/lib/content";
 import { Reveal } from "./Reveal";
@@ -23,7 +24,7 @@ export function Services() {
           <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white">
             <div className="relative aspect-[16/9] md:min-h-56 md:flex-1">
               <Image
-                src="/images/interior.webp"
+                src={asset("/images/interior.webp")}
                 alt="이사 완료 후 완벽하게 정리된 집 안 전경"
                 fill
                 sizes="(max-width: 768px) 100vw, 60vw"

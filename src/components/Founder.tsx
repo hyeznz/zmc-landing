@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { Reveal } from "./Reveal";
 
 export function Founder() {
@@ -8,7 +9,7 @@ export function Founder() {
         <Reveal className="order-2 md:order-1">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
-              src="/images/detail.webp"
+              src={asset("/images/detail.webp")}
               alt="전문 포장재로 이중 삼중 래핑된 가구"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
